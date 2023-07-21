@@ -3,6 +3,7 @@
 
 Belisha Genin, Catherine Merfeld, Yangtian Yan, Yukun Liu
 
+![](/presentation_images/data_vis.png?raw=true "Example Images")
 
 This tool takes images of wild mushrooms and predicts their safety for human consumption. Our tool could be turned into an app for amateur mushroom foragers to use while out hiking to decide whether a mushroom was worth picking and bringing home for further identification.
 
@@ -11,3 +12,10 @@ There are many other mushroom identification tools in existence. Ours has two ke
 
 
 The largest challenge of this project was the small size of the dataset. With a training set consisting of about 4,200 images, the dataset was much smaller than what a neural network needs to run well. To deal with this we applied two methods: data augmentation and transfer learning.
+
+The image below is an example of data augmentation on one of our training imgages:
+![](/presentation_images/data_aug_layers.png?raw=true "Example Images")
+
+To allow our model to see images taken in poor lighting conditions we used TensorFlow's `stateless_random_brightness` transformation. See an example below:
+![](/presentation_images/data_aug_lighting.png?raw=true "Example Images")
+
