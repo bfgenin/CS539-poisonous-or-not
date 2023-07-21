@@ -16,7 +16,7 @@ The largest challenge of this project was the small size of the dataset. With a 
 The image below is an example of data augmentation on one of our training imgages:
 ![](/presentation_images/data_aug_layers.png?raw=true "Example Images")
 
-To allow our model to see images taken in poor lighting conditions we used TensorFlow's `stateless_random_brightness` transformation. See an example below:
+To allow our model to see images taken in poor lighting conditions we used TensorFlow's `stateless_random_brightness` transformation. Click the image below to see an example:
 
 ![](/presentation_images/data_aug_lighting.png?raw=true "Example Images")
 
